@@ -10,5 +10,5 @@ ARG currentEnv=uat
 
 FROM nginx:alpine
 
-COPY --from=builder /app/dist/web-template/ /usr/share/nginx/html/
+COPY --from=builder /app/dist/oulo-web-app-angular/ /usr/share/nginx/html/
 COPY --from=builder /app/nginx.conf /etc/nginx/nginx.conf
